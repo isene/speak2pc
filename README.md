@@ -20,7 +20,9 @@ devices must be connected to the same local wifi network. This may well work
 on a Windows or Mac PC. I have only tested this on Linux and with an Android
 phone.
 
-Upload the ssh keys from your phone to your PC like this:
+In order to not have to enter your password when connection to your PC (or
+worse - say it aloud), you upload the ssh keys from your phone to your PC like
+this:
 
 ```
 cat ~/.ssh/id_rsa.pub | ssh user@192.168.0.2 "cat >> ~/.ssh/authorized_keys"
