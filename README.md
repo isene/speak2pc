@@ -12,7 +12,7 @@ Or any other creative scenario you may imagine.
 
 You need a phone running [Termux]() with the packages `termux-tts-speak` and
 `termux-speech-to-text` installed. You also need the packages `Ruby` and
-`OpenSSL`.
+`OpenSSL`. Use `pkg install` inside termux to install these packages.
 
 Generate ssh keys on your phone and upload them to your PC running `sshd`
 and accepting ssh connection. Unless you have a static IP on your PC, both
