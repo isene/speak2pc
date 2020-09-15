@@ -1,0 +1,38 @@
+#!/data/data/com.termux/files/usr/bin/ruby
+# encoding: utf-8
+
+# Change the next two lines to reflect the user and location of the
+# remotescript program on your PC
+user    = "user"
+# This turns into "/home/user/bin/remotescript"
+binary  = File.join("/home", user, "bin", "remotescript")
+
+
+address = ""
+until address.match( /\d*.\d*.\d*.\d*./ )
+  system("termux-tts-speak 'My love, where do you want to go today?'")
+  address = `termux-speech-to-text`.gsub(/ /, '.').strip
+  if address.match( /same/ )
+    begin
+      address = File.read( "pc_address" )
+    rescue
+      system("termux-tts-speak 'Nothing in store for you, my dear.'")
+    end
+  elsif address.match( /\d*.\d*.\d*.\d*./ )
+    File.write( "pc_address", address )
+  else
+    system("termux-tts-speak 'I am sorry wonderboy, I cannot reach that address.'")
+  end
+end
+
+system("termux-tts-speak My love, your wish is my command.")
+parameter = `termux-speech-to-text`
+
+connect = "Attempting to connect to #{address}"
+connect += "with #{parameter}" if parameter.match( /10\d/ )
+system("termux-tts-speak #{connect}")
+
+command = "#{binary} '#{parameter}'"
+puts `ssh #{user}@#{address} '#{command}'`
+
+system("termux-tts-speak 'Thank you for the pleasant connection.'")

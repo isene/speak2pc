@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+# encoding: utf-8
+
+puts "Running commands..."
+
+# Change this to the commands you want to run on your PC
+# The default is when no parameter is given or the parameter is not recognized
+default = "impressive ~/5_OnePageBooks/X_1PB-Compilation/1PB-compilation.pdf"
+p101    = "impressive ~/G/_OLD/FC/African_Case2.pdf"
+p102    = "mplayer ~/G/Personal/ThaBOM.mp4"
+p103    = "mplayer ~/G/Personal/OK-Sjef.mp3"
+
+p = ARGV[0]
+
+# Change "DISPLAY=:0" to what the desplay X is running on (check with `echo $DISPLAY`)
+case p
+  when "101"
+    `DISPLAY=:0 #{p101} &`
+  when "102"
+    `DISPLAY=:0 #{p102} &`
+  when "103"
+    `DISPLAY=:0 #{p103} &`
+  else 
+    `DISPLAY=:0 #{default} &`
+end
+
+
