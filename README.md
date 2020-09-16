@@ -8,6 +8,10 @@ rudimentary. So now I can talk to my phone while on stage and the right
 presentation pops up on my laptop that sits on the otheer side of the stage.
 Or any other creative scenario you may imagine.
 
+Here is a video to show how this works:
+
+[![Shepherd Harvest Design Sprint](/img/speak2pc.png)](https://youtu.be/XNkNfWF5Uk0 "Speak2PC")
+
 ## Prerequisite
 
 You need a phone running [Termux]() with the packages `termux-tts-speak` and
