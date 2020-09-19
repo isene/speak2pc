@@ -14,9 +14,11 @@ Here is a video to show how this works:
 
 ## Prerequisite
 
-You need a phone running [Termux]() with the packages `termux-tts-speak` and
-`termux-speech-to-text` installed. You also need the packages `Ruby` and
-`OpenSSL`. Use `pkg install` inside termux to install these packages.
+You need a phone running the apps
+[Termux](https://play.google.com/store/apps/details?id=com.termux&hl=en) and
+[Termux:API](https://play.google.com/store/apps/details?id=com.termux.api&hl=en)
+(giving you`termux-tts-speak` and `termux-speech-to-text`). You also need to
+install `Ruby` and `OpenSSL` by using `pkg install` inside termux.
 
 Generate ssh keys on your phone and upload them to your PC running `sshd`
 and accepting ssh connection. Unless you have a static IP on your PC, both
