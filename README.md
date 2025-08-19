@@ -1,10 +1,10 @@
-<img src="img/speak2pc_logo.svg" align="left" width="150" height="150" alt="speak2pc Logo">
-
 # speak2pc
 
 [![License](https://img.shields.io/badge/License-Public%20Domain-brightgreen.svg)](https://unlicense.org/)
 [![GitHub stars](https://img.shields.io/github/stars/isene/speak2pc.svg)](https://github.com/isene/speak2pc/stargazers)
 [![Stay Amazing](https://img.shields.io/badge/Stay-Amazing-blue.svg)](https://isene.org)
+
+<img src="img/speak2pc_logo.svg" align="left" width="150" height="150" alt="speak2pc Logo">
 
 Control your PC with your phone by voice.
 
