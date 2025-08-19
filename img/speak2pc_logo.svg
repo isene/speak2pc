@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="150" height="150" fill="#0f172a"/>
+  
+  <!-- Microphone -->
+  <g transform="translate(40, 75)">
+    <!-- Mic body -->
+    <rect x="-8" y="-20" width="16" height="25" rx="8" fill="#3b82f6" stroke="#2563eb" stroke-width="2"/>
+    
+    <!-- Mic grille -->
+    <g stroke="#1e40af" stroke-width="0.5">
+      <line x1="-4" y1="-15" x2="-4" y2="0"/>
+      <line x1="0" y1="-15" x2="0" y2="0"/>
+      <line x1="4" y1="-15" x2="4" y2="0"/>
+    </g>
+    
+    <!-- Mic stand -->
+    <path d="M -10,5 Q 0,10 10,5" stroke="#6b7280" stroke-width="2" fill="none"/>
+    <line x1="0" y1="8" x2="0" y2="20" stroke="#6b7280" stroke-width="2"/>
+    <rect x="-8" y="20" width="16" height="3" fill="#6b7280"/>
+    
+    <!-- Sound waves -->
+    <g stroke="#60a5fa" stroke-width="1.5" fill="none" opacity="0.8">
+      <path d="M -15,-10 Q -20,-10 -22,-5 Q -24,0 -22,5 Q -20,10 -15,10">
+        <animate attributeName="opacity" values="0;0.8;0" dur="2s" repeatCount="indefinite"/>
+      </path>
+      <path d="M -18,-15 Q -25,-15 -28,-7.5 Q -31,0 -28,7.5 Q -25,15 -18,15">
+        <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="0.5s" repeatCount="indefinite"/>
+      </path>
+      <path d="M -21,-20 Q -30,-20 -34,-10 Q -38,0 -34,10 Q -30,20 -21,20">
+        <animate attributeName="opacity" values="0;0.8;0" dur="2s" begin="1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+  
+  <!-- Arrow -->
+  <g transform="translate(75, 75)">
+    <path d="M -10,0 L 10,0 L 7,-3 M 10,0 L 7,3" stroke="#fbbf24" stroke-width="3" fill="none">
+      <animate attributeName="stroke-width" values="3;4;3" dur="1.5s" repeatCount="indefinite"/>
+    </path>
+  </g>
+  
+  <!-- Computer -->
+  <g transform="translate(110, 75)">
+    <!-- Monitor -->
+    <rect x="-20" y="-15" width="40" height="25" rx="2" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+    
+    <!-- Screen with text -->
+    <rect x="-17" y="-12" width="34" height="19" fill="#000"/>
+    <g font-family="monospace" font-size="3" fill="#00ff00">
+      <text x="-15" y="-8">Listening...</text>
+      <text x="-15" y="-4">Speech detected</text>
+      <text x="-15" y="0">Transcribing...</text>
+      <text x="-15" y="4">"Hello world"</text>
+    </g>
+    
+    <!-- Stand -->
+    <rect x="-3" y="10" width="6" height="8" fill="#475569"/>
+    <rect x="-6" y="18" width="12" height="2" fill="#475569"/>
+  </g>
+  
+  <!-- Speech visualization -->
+  <g transform="translate(75, 45)" opacity="0.7">
+    <rect x="-30" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;20;10" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-10;-5" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-25" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;25;10" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-12.5;-5" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-20" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;15;10" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-7.5;-5" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-15" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;30;10" dur="0.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-15;-5" dur="0.5s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-10" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;20;10" dur="0.5s" begin="0.4s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-10;-5" dur="0.5s" begin="0.4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="-5" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;25;10" dur="0.5s" begin="0.3s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-12.5;-5" dur="0.5s" begin="0.3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;15;10" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-7.5;-5" dur="0.5s" begin="0.2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="5" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;20;10" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-10;-5" dur="0.5s" begin="0.1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="10" y="-5" width="3" height="10" fill="#60a5fa">
+      <animate attributeName="height" values="10;12;10" dur="0.5s" repeatCount="indefinite"/>
+      <animate attributeName="y" values="-5;-6;-5" dur="0.5s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+  
+  <!-- Features -->
+  <g transform="translate(75, 105)" opacity="0.7">
+    <text x="0" y="0" font-family="monospace" font-size="4" fill="#60a5fa" text-anchor="middle">Speech Recognition</text>
+    <text x="0" y="6" font-family="monospace" font-size="3.5" fill="#94a3b8" text-anchor="middle">Voice → Text → PC</text>
+  </g>
+  
+  <!-- Text -->
+  <text x="75" y="130" font-family="monospace" font-size="13" fill="#fff" text-anchor="middle" font-weight="bold">speak2pc</text>
+  <text x="75" y="140" font-family="monospace" font-size="7" fill="#94a3b8" text-anchor="middle">Voice Input System</text>
+</svg>
